@@ -5,6 +5,7 @@ services:
     container_name: orpheusdl
     volumes:
       - ./config:/app/config
+      - ./downloads:/app/downloads
     restart: 'unless-stopped'
     
     command: 
