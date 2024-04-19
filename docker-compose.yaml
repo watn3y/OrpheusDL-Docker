@@ -1,0 +1,12 @@
+services:
+  orpheusdl:
+    image: watn3y/orpheusdl:latest #latest release
+    #image: watn3y/orpheusdl:master #current master branch 
+    container_name: orpheusdl
+    volumes:
+      - ./config:/app/config
+    restart: 'unless-stopped'
+    
+    command: 
+      - settings 
+      - refresh
